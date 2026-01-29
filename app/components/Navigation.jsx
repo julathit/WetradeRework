@@ -8,8 +8,8 @@ export default function Navigation() {
   return (
     <nav className="hidden lg:flex items-center gap-6 xl:gap-9">
       {[
-        { label: 'Dashboard', href: '/dashboard/dashboard' },
-        { label: 'Transactions', href: '/dashboard' },
+        { label: 'Dashboard', href: '/dashboard' },
+        { label: 'Transactions', href: '/dashboard/transaction' },
         { label: 'Accounts', href: '/dashboard/accounts' },
         { label: 'Profile', href: '/dashboard/profile' },
       ].map((link) => {
