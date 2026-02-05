@@ -1,0 +1,37 @@
+TODO LIST FOR DASHBOARD APP
+============================
+
+PROFILE PAGE:
+- [ ] Implement profile page UI (currently empty)
+- [ ] Add user information display
+- [ ] Add profile edit form
+- [ ] Add profile picture upload
+- [ ] Add password change functionality
+
+ACCOUNTS PAGE:
+- [ ] Review and complete accounts page functionality
+- [ ] Add account listing
+- [ ] Add account creation form
+- [ ] Add account editing capabilities
+
+TRANSACTIONS PAGE:
+- [ ] Verify TransactionView component integration
+- [ ] Test RecentTransactions component
+- [ ] Add transaction filtering
+- [ ] Add transaction search
+- [ ] Add pagination for transaction history
+
+COMPONENTS:
+- [ ] Style DashboardStats component
+- [ ] Ensure Navigation component works across all pages
+- [ ] Add error handling to components
+- [ ] Add loading states
+
+GENERAL:
+- [ ] Set up authentication
+- [ ] Add API routes for data fetching
+- [ ] Implement database integration
+- [ ] Add form validation
+- [ ] Test responsive design
+- [ ] Add error boundaries
+- [ ] Implement dark mode (optional)
