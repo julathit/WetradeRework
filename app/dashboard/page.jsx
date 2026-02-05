@@ -1,6 +1,13 @@
 import React from 'react';
 import DashboardStats from '@/app/components/DashboardStats';
 import RecentTransactions from '@/app/components/RecentTransactions';
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select';
 
 export default function DashboardPage() {
   return (
@@ -13,10 +20,15 @@ export default function DashboardPage() {
         {/* Year Selector */}
         <div className="flex items-center gap-3">
           <span className="text-sm font-medium text-[#616f89] dark:text-[#9ca3af]">Tax Year:</span>
-          <select className="bg-white dark:bg-[#1e2330] border border-[#dbdfe6] dark:border-[#374151] rounded-lg text-sm px-3 py-1.5 focus:ring-[#135bec] focus:border-[#135bec] transition-all">
-            <option>2023</option>
-            <option>2022</option>
-          </select>
+          <Select defaultValue="2023">
+            <SelectTrigger className="w-[100px]">
+              <SelectValue placeholder="Select year" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="2023">2023</SelectItem>
+              <SelectItem value="2022">2022</SelectItem>
+            </SelectContent>
+          </Select>
         </div>
       </div>
 

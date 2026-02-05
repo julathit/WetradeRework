@@ -1,4 +1,11 @@
 import React from 'react';
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select';
 
 export default function RecentTransactions() {
   return (
@@ -10,12 +17,17 @@ export default function RecentTransactions() {
           <p className="text-sm text-[#616f89] dark:text-[#9ca3af]">Activity across all connected accounts</p>
         </div>
         <div className="flex items-center gap-3">
-          <select className="bg-[#f6f6f8] dark:bg-[#101622] border-none rounded-lg text-sm px-4 py-2 focus:ring-2 focus:ring-[#135bec]/20 cursor-pointer min-w-[180px]">
-            <option>All Accounts</option>
-            <option>Kasikorn Bank (TH)</option>
-            <option>Chase Bank (US)</option>
-            <option>Binance Wallet</option>
-          </select>
+          <Select defaultValue="all">
+            <SelectTrigger className="w-[180px]">
+              <SelectValue placeholder="Select account" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="all">All Accounts</SelectItem>
+              <SelectItem value="kasikorn">US Assets</SelectItem>
+              <SelectItem value="chase">Exchange</SelectItem>
+              {/* <SelectItem value="binance">Binance Wallet</SelectItem> */}
+            </SelectContent>
+          </Select>
           <button className="bg-[#135bec] text-white text-sm font-bold h-10 px-4 rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2">
             <span className="material-symbols-outlined text-lg">add</span>
             New
